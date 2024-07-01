@@ -1,20 +1,21 @@
 package Model;
 
-import Enum.Sigla;
+import Enum.Estado;
+
 
 public class Endereco {
-	public Endereco(Sigla sigla, String capital) {
-		this.sigla = sigla;
-		this.capital = capital;
+	public Endereco(Estado estado, Boolean isCapital) {
+		this.estado = estado;
+		this.isCapital = isCapital;
 	}
 	
-	private Sigla sigla;
-	private String capital;
+	private Estado estado;
+	private Boolean isCapital;
 	
-	public Sigla getSigla() {
-		return sigla;
+	public Estado getEstado() {
+		return estado;
 	}
-	public String getCapital() {
-		return capital;
+	public Boolean getCapital() {
+		return isCapital;
 	}
 }
