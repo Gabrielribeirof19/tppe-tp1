@@ -32,5 +32,10 @@ public class Cliente {
     public Float getCashback() {
         return cashback;
     }
+
+	public void setCashback(float f) {
+		// TODO Auto-generated method stub
+		
+	}
     
 }
