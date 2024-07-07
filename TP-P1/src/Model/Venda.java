@@ -3,9 +3,10 @@ package Model;
 import Enum.Estado;
 import Enum.Regiao;
 import Enum.TipoCliente;
+import java.time.LocalDate;
 
 public class Venda {
-    private String data;
+    private LocalDate data;
     private Cliente cliente;
     private Produto[] itens;
     private String metodoPagamento;
@@ -15,7 +16,7 @@ public class Venda {
     private float frete;
     private float desconto;
 
-    public Venda(String data, Cliente cliente, Produto[] itens, String metodoPagamento, Boolean cashbackIsUsed, float imposto, float valor, float frete, float desconto) {
+    public Venda(LocalDate data, Cliente cliente, Produto[] itens, String metodoPagamento, Boolean cashbackIsUsed, float imposto, float valor, float frete, float desconto) {
         this.data = data;
         this.cliente = cliente;
         this.itens = itens;
@@ -27,7 +28,7 @@ public class Venda {
         this.desconto = desconto;
     }
 
-    public String getData() { return data; }
+    public LocalDate getData() { return data; }
     public Cliente getCliente() { return cliente; }
     public Produto[] getItens() { return itens; }
     public String getMetodoPagamento() { return metodoPagamento; }
